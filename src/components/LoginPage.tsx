@@ -1,20 +1,18 @@
-import React, { Component, Fragment } from 'react';
+import React, { Component, Fragment } from "react";
+
+const defaultState = {
+  userName: " ",
+  password: " ",
+  errorMessage: " ",
+};
 
 export class LoginPage extends React.Component {
-    state = {
-        userName: " ",
-        password: " ",
-        userNameMessage: " ",
-        passwordMessage: " "
-    }; 
+  state = {
+  };
 
-    render() {
-        return (
-            <Fragment>
-                
-            </Fragment>
-        );
-    }
+  render() {
+    return <Fragment></Fragment>;
+  }
 }
 
 export default LoginPage;
