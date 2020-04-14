@@ -44,7 +44,7 @@ export class LoginPage extends React.Component {
     const isValid = this.valid();
     if (isValid) {
       console.log(this.state);
-      // clear form
+
       this.setState(defaultState);
     }
   };
@@ -75,7 +75,7 @@ export class LoginPage extends React.Component {
             {this.state.passwordError}
           </div>
         </div>
-        <button type="submit">submit</button>
+        <button type="submit">Login</button>
       </form>
     );
   }
