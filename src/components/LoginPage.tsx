@@ -1,4 +1,5 @@
 import React, { Component, Fragment } from "react";
+import LoginButton from "./LoginButton"
 
 const defaultState = {
   userName: " ",
@@ -7,11 +8,24 @@ const defaultState = {
 };
 
 export class LoginPage extends React.Component {
-  state = {
-  };
+  state = defaultState;
 
   render() {
-    return <Fragment></Fragment>;
+    return (
+      <Fragment>
+        <div>
+          <input name="" />
+        </div>
+        <div>
+          <input
+            type="password"
+            name="password"
+            placeholder="password"
+          />
+        </div>
+        <LoginButton />
+      </Fragment>
+    );
   }
 }
 
